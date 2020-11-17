@@ -1,10 +1,12 @@
+# git_tutorial[^1]
+
+<figure><center><img src="https://raw.githubusercontent.com/ld269440877/images/master/3CRTR/20201117211033.png" alt="gitcheasheet[^3]"  title="gitcheasheet[^3]" width="600" height="" /><figcaption><font color=green>gitcheasheet[^3]</font></figcaption></center></figure>
 
 
-# git_tutorial
 
 ## git基础概念
 
-**版本控制**是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。
+**版本控制**是一种记录一个或若干文件内容变化，以便将来查阅特定版本<font color=red>修订</font>情况的系统。
 
 分布式版本控制系统(Distributed Version Control System，简称 *DVCS*)
 
@@ -49,6 +51,31 @@ Git 中使用这种哈希值的情况很多，你将经常看到这种哈希值�
 ### Git 一般只添加数据
 
 你执行的 Git 操作，几乎只往 Git 数据库中增加数据。 很难让 Git 执行任何不可逆操作，或者让它以任何方式清除数据。 同别的 VCS 一样，未提交更新时有可能丢失或弄乱修改的内容；但是一旦你提交快照到 Git 中，就难以再丢失数据，特别是如果你定期的推送数据库到其它仓库的话。
+
+Git 的工作就是创建和保存你项目的快照及与之后的快照进行对比。
+
+### 在学习Git需要清楚的几个术语[^2]
+
+
+
+![image-20201117210119576](E:\git\git_tutorial\README.assets\image-20201117210119576.png)
+
+**Workspace**：工作区
+**Index/Stage**：暂存区，也叫索引
+**Repository**：仓库区（或本地仓库），也存储库
+**Remote**：远程仓库
+
+**1. 有关几个名词解释**
+
+**工作区**: 通过`git init`创建的代码库的所有文件但是不包括`.git`文件(版本库)
+**暂存区**: 通过`git add ./*/*Xxx/Xxxx*` 添加的修改,都是进入到暂存区了,肉眼不可见 通过 `git status` 可以看到修改的状态。
+
+**2. 什么是修改？**
+比如你新增了一行，这就是一个修改，
+删除了一行，也是一个修改，
+更改了某些字符，也是一个修改，
+删了一些又加了一些，也是一个修改，
+甚至创建一个新文件，也算一个修改。
 
 ### 三种状态
 
@@ -108,7 +135,7 @@ Shell
 
 这些命令很棒，因为随时随地可以使用而无需联网。如果你觉得手册或者本书的内容还不够用，你可以尝试在 Freenode IRC 服务器( `irc.freenode.net` )的 `#git` 或 `#github` 频道寻求帮助。这些频道经常有上百人在线，他们都精通 Git 并且乐于助人。
 
-## Git快速入门
+# Git快速入门
 
 ### 远程仓库是什么？
 
@@ -6782,4 +6809,6 @@ Shell
 $ git rebase --abort
 ```
 
- 
+[^1]: [ Git教程™](https://www.yiibai.com/git)
+[^2]: [Git 基本操作 | 菜鸟教程](https://www.runoob.com/git/git-basic-operations.html)
+[^3]: [workspace :: Git Cheatsheet](http://www.ndpsoftware.com/git-cheatsheet.html#loc=workspace)
